@@ -10,7 +10,6 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <TypeScriptToolsVersion>1.7</TypeScriptToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -22,16 +21,150 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="libs\requirejs\require.js" />
+    <Content Include="resource\cards\png\10_of_clubs.png" />
+    <Content Include="resource\cards\png\10_of_diamonds.png" />
+    <Content Include="resource\cards\png\10_of_hearts.png" />
+    <Content Include="resource\cards\png\10_of_spades.png" />
+    <Content Include="resource\cards\png\2_of_clubs.png" />
+    <Content Include="resource\cards\png\2_of_diamonds.png" />
+    <Content Include="resource\cards\png\2_of_hearts.png" />
+    <Content Include="resource\cards\png\2_of_spades.png" />
+    <Content Include="resource\cards\png\3_of_clubs.png" />
+    <Content Include="resource\cards\png\3_of_diamonds.png" />
+    <Content Include="resource\cards\png\3_of_hearts.png" />
+    <Content Include="resource\cards\png\3_of_spades.png" />
+    <Content Include="resource\cards\png\4_of_clubs.png" />
+    <Content Include="resource\cards\png\4_of_diamonds.png" />
+    <Content Include="resource\cards\png\4_of_hearts.png" />
+    <Content Include="resource\cards\png\4_of_spades.png" />
+    <Content Include="resource\cards\png\5_of_clubs.png" />
+    <Content Include="resource\cards\png\5_of_diamonds.png" />
+    <Content Include="resource\cards\png\5_of_hearts.png" />
+    <Content Include="resource\cards\png\5_of_spades.png" />
+    <Content Include="resource\cards\png\6_of_clubs.png" />
+    <Content Include="resource\cards\png\6_of_diamonds.png" />
+    <Content Include="resource\cards\png\6_of_hearts.png" />
+    <Content Include="resource\cards\png\6_of_spades.png" />
+    <Content Include="resource\cards\png\7_of_clubs.png" />
+    <Content Include="resource\cards\png\7_of_diamonds.png" />
+    <Content Include="resource\cards\png\7_of_hearts.png" />
+    <Content Include="resource\cards\png\7_of_spades.png" />
+    <Content Include="resource\cards\png\8_of_clubs.png" />
+    <Content Include="resource\cards\png\8_of_diamonds.png" />
+    <Content Include="resource\cards\png\8_of_hearts.png" />
+    <Content Include="resource\cards\png\8_of_spades.png" />
+    <Content Include="resource\cards\png\9_of_clubs.png" />
+    <Content Include="resource\cards\png\9_of_diamonds.png" />
+    <Content Include="resource\cards\png\9_of_hearts.png" />
+    <Content Include="resource\cards\png\9_of_spades.png" />
+    <Content Include="resource\cards\png\ace_of_clubs.png" />
+    <Content Include="resource\cards\png\ace_of_diamonds.png" />
+    <Content Include="resource\cards\png\ace_of_hearts.png" />
+    <Content Include="resource\cards\png\ace_of_spades.png" />
+    <Content Include="resource\cards\png\ace_of_spades2.png" />
+    <Content Include="resource\cards\png\black_joker.png" />
+    <Content Include="resource\cards\png\jack_of_clubs.png" />
+    <Content Include="resource\cards\png\jack_of_clubs2.png" />
+    <Content Include="resource\cards\png\jack_of_diamonds.png" />
+    <Content Include="resource\cards\png\jack_of_diamonds2.png" />
+    <Content Include="resource\cards\png\jack_of_hearts.png" />
+    <Content Include="resource\cards\png\jack_of_hearts2.png" />
+    <Content Include="resource\cards\png\jack_of_spades.png" />
+    <Content Include="resource\cards\png\jack_of_spades2.png" />
+    <Content Include="resource\cards\png\king_of_clubs.png" />
+    <Content Include="resource\cards\png\king_of_clubs2.png" />
+    <Content Include="resource\cards\png\king_of_diamonds.png" />
+    <Content Include="resource\cards\png\king_of_diamonds2.png" />
+    <Content Include="resource\cards\png\king_of_hearts.png" />
+    <Content Include="resource\cards\png\king_of_hearts2.png" />
+    <Content Include="resource\cards\png\king_of_spades.png" />
+    <Content Include="resource\cards\png\king_of_spades2.png" />
+    <Content Include="resource\cards\png\queen_of_clubs.png" />
+    <Content Include="resource\cards\png\queen_of_clubs2.png" />
+    <Content Include="resource\cards\png\queen_of_diamonds.png" />
+    <Content Include="resource\cards\png\queen_of_diamonds2.png" />
+    <Content Include="resource\cards\png\queen_of_hearts.png" />
+    <Content Include="resource\cards\png\queen_of_hearts2.png" />
+    <Content Include="resource\cards\png\queen_of_spades.png" />
+    <Content Include="resource\cards\png\queen_of_spades2.png" />
+    <Content Include="resource\cards\png\red_joker.png" />
+    <Content Include="resource\cards\svg\10_of_clubs.svg" />
+    <Content Include="resource\cards\svg\10_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\10_of_hearts.svg" />
+    <Content Include="resource\cards\svg\10_of_spades.svg" />
+    <Content Include="resource\cards\svg\2_of_clubs.svg" />
+    <Content Include="resource\cards\svg\2_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\2_of_hearts.svg" />
+    <Content Include="resource\cards\svg\2_of_spades.svg" />
+    <Content Include="resource\cards\svg\3_of_clubs.svg" />
+    <Content Include="resource\cards\svg\3_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\3_of_hearts.svg" />
+    <Content Include="resource\cards\svg\3_of_spades.svg" />
+    <Content Include="resource\cards\svg\4_of_clubs.svg" />
+    <Content Include="resource\cards\svg\4_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\4_of_hearts.svg" />
+    <Content Include="resource\cards\svg\4_of_spades.svg" />
+    <Content Include="resource\cards\svg\5_of_clubs.svg" />
+    <Content Include="resource\cards\svg\5_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\5_of_hearts.svg" />
+    <Content Include="resource\cards\svg\5_of_spades.svg" />
+    <Content Include="resource\cards\svg\6_of_clubs.svg" />
+    <Content Include="resource\cards\svg\6_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\6_of_hearts.svg" />
+    <Content Include="resource\cards\svg\6_of_spades.svg" />
+    <Content Include="resource\cards\svg\7_of_clubs.svg" />
+    <Content Include="resource\cards\svg\7_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\7_of_hearts.svg" />
+    <Content Include="resource\cards\svg\7_of_spades.svg" />
+    <Content Include="resource\cards\svg\8_of_clubs.svg" />
+    <Content Include="resource\cards\svg\8_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\8_of_hearts.svg" />
+    <Content Include="resource\cards\svg\8_of_spades.svg" />
+    <Content Include="resource\cards\svg\9_of_clubs.svg" />
+    <Content Include="resource\cards\svg\9_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\9_of_hearts.svg" />
+    <Content Include="resource\cards\svg\9_of_spades.svg" />
+    <Content Include="resource\cards\svg\ace_of_clubs.svg" />
+    <Content Include="resource\cards\svg\ace_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\ace_of_hearts.svg" />
+    <Content Include="resource\cards\svg\ace_of_spades.svg" />
+    <Content Include="resource\cards\svg\ace_of_spades2.svg" />
+    <Content Include="resource\cards\svg\black_joker.svg" />
+    <Content Include="resource\cards\svg\jack_of_clubs.svg" />
+    <Content Include="resource\cards\svg\jack_of_clubs2.svg" />
+    <Content Include="resource\cards\svg\jack_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\jack_of_diamonds2.svg" />
+    <Content Include="resource\cards\svg\jack_of_hearts.svg" />
+    <Content Include="resource\cards\svg\jack_of_hearts2.svg" />
+    <Content Include="resource\cards\svg\jack_of_spades.svg" />
+    <Content Include="resource\cards\svg\jack_of_spades2.svg" />
+    <Content Include="resource\cards\svg\king_of_clubs.svg" />
+    <Content Include="resource\cards\svg\king_of_clubs2.svg" />
+    <Content Include="resource\cards\svg\king_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\king_of_diamonds2.svg" />
+    <Content Include="resource\cards\svg\king_of_hearts.svg" />
+    <Content Include="resource\cards\svg\king_of_hearts2.svg" />
+    <Content Include="resource\cards\svg\king_of_spades.svg" />
+    <Content Include="resource\cards\svg\king_of_spades2.svg" />
+    <Content Include="resource\cards\svg\queen_of_clubs.svg" />
+    <Content Include="resource\cards\svg\queen_of_clubs2.svg" />
+    <Content Include="resource\cards\svg\queen_of_diamonds.svg" />
+    <Content Include="resource\cards\svg\queen_of_diamonds2.svg" />
+    <Content Include="resource\cards\svg\queen_of_hearts.svg" />
+    <Content Include="resource\cards\svg\queen_of_hearts2.svg" />
+    <Content Include="resource\cards\svg\queen_of_spades.svg" />
+    <Content Include="resource\cards\svg\queen_of_spades2.svg" />
+    <Content Include="resource\cards\svg\red_joker.svg" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
-    <TypeScriptCompile Include="dataAccess\CardDal.ts" />
-    <TypeScriptCompile Include="model\Card.ts" />
-    <TypeScriptCompile Include="model\CardFace.ts" />
-    <TypeScriptCompile Include="model\CardSuite.ts" />
+    <TypeScriptCompile Include="ts\dataAccess\CardDal.ts" />
+    <TypeScriptCompile Include="ts\main.ts" />
+    <TypeScriptCompile Include="ts\model\Card.ts" />
+    <TypeScriptCompile Include="ts\model\CardFace.ts" />
+    <TypeScriptCompile Include="ts\model\CardSuite.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -42,8 +175,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="business\" />
-    <Folder Include="utilities\" />
+    <Folder Include="ts\business\" />
+    <Folder Include="ts\utilities\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
@@ -74,6 +207,18 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptOutFile>
+    </TypeScriptOutFile>
+    <TypeScriptOutDir>./js</TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
