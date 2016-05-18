@@ -2,8 +2,8 @@
 import {CardFace} from './CardFace';
 
 export class Card {
-    suite: CardSuite;
-    face: CardFace;  
+    constructor(public suite: CardSuite, public face: CardFace) {
+    }
 };
 
 

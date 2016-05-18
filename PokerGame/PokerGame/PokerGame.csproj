@@ -21,6 +21,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\jasmine.css" />
     <Content Include="index.html" />
     <Content Include="libs\requirejs\require.js" />
     <Content Include="resource\cards\png\10_of_clubs.png" />
@@ -157,9 +158,13 @@
     <Content Include="resource\cards\svg\queen_of_spades.svg" />
     <Content Include="resource\cards\svg\queen_of_spades2.svg" />
     <Content Include="resource\cards\svg\red_joker.svg" />
+    <Content Include="Scripts\jasmine-html.js" />
+    <Content Include="Scripts\jasmine.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\typings\jasmine\jasmine.d.ts" />
+    <TypeScriptCompile Include="test\hello_spec.ts" />
     <TypeScriptCompile Include="ts\dataAccess\CardDal.ts" />
     <TypeScriptCompile Include="ts\main.ts" />
     <TypeScriptCompile Include="ts\model\Card.ts" />
@@ -167,6 +172,7 @@
     <TypeScriptCompile Include="ts\model\CardSuite.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
